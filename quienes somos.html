@@ -2,20 +2,20 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Dulces Caprichos</title>
+  <title>Quiénes Somos – Dulces Caprichos</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #fcefee; /* rosa claro */
-      background-image: url('fondo-galletas.jpg'); /* reemplaza con tu imagen */
+      background-color: #fcefee;
+      background-image: url('fondo-galletas.jpg');
       background-size: cover;
       background-repeat: repeat;
       color: #4b2e2e;
     }
 
     header {
-      background-color: #c97b91; /* rosa oscuro */
+      background-color: #c97b91;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -54,7 +54,7 @@
       background-color: rgba(255, 248, 240, 0.95);
       margin: 2rem auto;
       padding: 2rem;
-      max-width: 800px;
+      max-width: 900px;
       border-radius: 12px;
       box-shadow: 0 0 10px rgba(75, 46, 46, 0.2);
     }
@@ -64,21 +64,19 @@
       margin-top: 0;
     }
 
-    .menu {
-      margin-top: 1.5rem;
+    .owners {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
     }
 
-    .menu ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .menu li {
+    .owner-card {
       background-color: #fff;
-      margin-bottom: 0.5rem;
-      padding: 0.75rem;
-      border-left: 5px solid #c97b91;
-      border-radius: 6px;
+      border: 1px solid #ccc;
+      padding: 1rem;
+      border-radius: 8px;
+      flex: 1;
+      min-width: 250px;
     }
 
     footer {
@@ -98,24 +96,31 @@
     <nav>
       <a href="index.html">Inicio</a>
       <a href="https://wa.me/523316956941" target="_blank">Encargos</a>
-      <a href="quienes somos.html">Quiénes Somos</a>
+      <a href="quienes-somos.html">Quiénes Somos</a>
     </nav>
   </header>
 
   <div class="content">
     <img src="IMG-20251112-WA0030.jpg" alt="Logo Dulces Caprichos" style="display:block; margin:0 auto 1rem; max-width:200px;">
-    <h2>Dulces Caprichos</h2>
-    <p>Somos una empresa artesanal dedicada a la elaboración de <strong>galletas y barras energéticas</strong> saludables. Nuestra misión es ofrecer productos nutritivos, deliciosos y naturales que brinden energía y bienestar a nuestros consumidores.</p>
-    <p>Nos destacamos por el uso de ingredientes de alta calidad, sin conservadores artificiales, fomentando hábitos de consumo responsables con el medio ambiente.</p>
-
-    <div class="menu">
-      <h3>Menú</h3>
-      <ul>
-        <li>🍫 Galletas de chocolate</li>
-        <li>🌾 Barras energéticas de avena y miel</li>
-        <li>🍓 Galletas con frutos rojos (próximamente)</li>
-        <li>🥥 Barras de coco y linaza (próximamente)</li>
-      </ul>
+    <h2>Conoce a las fundadoras</h2>
+    <div class="owners">
+      <div class="owner-card">
+        <h3>Delia Rubi Parra Martínez</h3>
+        <p><strong>Formación:</strong> Técnica en electrónica</p>
+        <p><strong>Experiencia:</strong> Manejo de negocios familiares y contabilidad</p>
+        <p><strong>Contacto:</strong> <a href="mailto:deliarubi25@gmail.com">deliarubi25@gmail.com</a></p>
+      </div>
+      <div class="owner-card">
+        <h3>Wendy Lissette Rangel Martínez</h3>
+        <p><strong>Formación:</strong> Técnica en electrónica</p>
+        <p><strong>Experiencia:</strong> Atención al cliente</p>
+        <p><strong>Contacto:</strong> <a href="mailto:wendyrangel2515@gmail.com">wendyrangel2515@gmail.com</a></p>
+      </div>
+      <div class="owner-card">
+        <h3>Perla Roberta Velázquez Torres</h3>
+        <p><strong>Formación:</strong> Información no disponible</p>
+        <p><strong>Experiencia:</strong> Información no disponible</p>
+      </div>
     </div>
   </div>
 
