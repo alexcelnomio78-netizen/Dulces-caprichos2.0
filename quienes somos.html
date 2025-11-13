@@ -2,98 +2,21 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quiénes Somos – Dulces Caprichos</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fcefee;
-      background-image: url('fondo-galletas.jpg');
-      background-size: cover;
-      background-repeat: repeat;
-      color: #4b2e2e;
-    }
-
-    header {
-      background-color: #c97b91;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 1.5rem;
-      color: #fff;
-    }
-
-    nav {
-      display: flex;
-      gap: 1rem;
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-size: 0.85rem;
-      font-weight: bold;
-      padding: 0.3rem 0.6rem;
-      border-radius: 4px;
-      transition: background 0.3s;
-    }
-
-    nav a:hover {
-      background-color: #a0522d;
-    }
-
-    .content {
-      background-color: rgba(255, 248, 240, 0.95);
-      margin: 2rem auto;
-      padding: 2rem;
-      max-width: 900px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(75, 46, 46, 0.2);
-    }
-
-    .content h2 {
-      color: #c97b91;
-      margin-top: 0;
-    }
-
-    .owners {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-    }
-
-    .owner-card {
-      background-color: #fff;
-      border: 1px solid #ccc;
-      padding: 1rem;
-      border-radius: 8px;
-      flex: 1;
-      min-width: 250px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #c97b91;
-      color: white;
-      margin-top: 2rem;
-    }
-  </style>
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
   <header>
-      <img src="IMG-20251112-WA0030.jpg" alt="Logo Dulces Caprichos" style="display:block; margin:0 auto 1rem; max-width:100px;">
+    <img src="IMG-20251112-WA0030.jpg" alt="Logo Dulces Caprichos" style="max-width:80px;">
     <h1>Dulces Caprichos</h1>
-    <nav>
+
+    <!-- Botón hamburguesa -->
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <!-- Menú de navegación -->
+    <nav id="main-menu">
       <a href="index.html">Inicio</a>
       <a href="https://wa.me/523316956941" target="_blank">Encargos</a>
       <a href="quienes-somos.html">Quiénes Somos</a>
@@ -127,6 +50,14 @@
   <footer>
     &copy; 2025 Dulces Caprichos | El Salto, Jalisco, México
   </footer>
+
+  <!-- Script para abrir/cerrar menú -->
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('main-menu');
+      menu.classList.toggle('show');
+    }
+  </script>
 
 </body>
 </html>
