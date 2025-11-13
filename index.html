@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dulces Caprichos</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header>
+    <img src="IMG-20251112-WA0030.jpg" alt="Logo Dulces Caprichos" style="max-width:80px;">
+    <h1>Dulces Caprichos</h1>
+
+    <!-- Botón hamburguesa -->
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <!-- Menú de navegación -->
+    <nav id="main-menu">
+      <a href="index.html">Inicio</a>
+      <a href="https://wa.me/523316956941" target="_blank">Encargos</a>
+      <a href="quienes somos.html">Quiénes Somos</a>
+    </nav>
+  </header>
+
+  <div class="content">
+    <img src="IMG-20251112-WA0030.jpg" alt="Logo Dulces Caprichos" style="display:block; margin:0 auto 1rem; max-width:200px;">
+    <h2>Dulces Caprichos</h2>
+    <p>Somos una empresa artesanal dedicada a la elaboración de <strong>galletas y barras energéticas</strong> saludables. Nuestra misión es ofrecer productos nutritivos, deliciosos y naturales que brinden energía y bienestar a nuestros consumidores.</p>
+    <p>Nos destacamos por el uso de ingredientes de alta calidad, sin conservadores artificiales, fomentando hábitos de consumo responsables con el medio ambiente.</p>
+
+    <div class="menu">
+      <h3>Menú</h3>
+      <ul>
+        <li>🍫 Galletas de chocolate</li>
+        <li>🌾 Barras energéticas de avena y miel</li>
+        <li>🍓 Galletas con frutos rojos (próximamente)</li>
+        <li>🥥 Barras de coco y linaza (próximamente)</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Dulces Caprichos | El Salto, Jalisco, México
+  </footer>
+
+  <!-- Script para abrir/cerrar menú -->
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('main-menu');
+      menu.classList.toggle('show');
+    }
+  </script>
+
+</body>
+</html>
