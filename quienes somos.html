@@ -12,8 +12,13 @@
     <img src="IMG-20251112-WA0030.jpg" alt="Logo Dulces Caprichos" style="max-width:80px;">
     <h1>Dulces Caprichos</h1>
 
-    <!-- Botón hamburguesa -->
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <!-- Botón hamburguesa animado -->
+    <div class="hamburger">
+      <input type="checkbox" id="menu-toggle" onclick="toggleMenu()">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
 
     <!-- Menú de navegación -->
     <nav id="main-menu">
@@ -23,27 +28,31 @@
     </nav>
   </header>
 
-  <div class="content">
+  <div class="content" style="background-color: rgba(255,248,240,0.95); padding:2rem; border-radius:12px; box-shadow:0 0 10px rgba(75,46,46,0.2); margin:2rem auto; max-width:900px;">
     <img src="IMG-20251112-WA0030.jpg" alt="Logo Dulces Caprichos" style="display:block; margin:0 auto 1rem; max-width:200px;">
     <h2>Conoce a las fundadoras</h2>
-    <div class="owners">
-      <div class="owner-card">
+    <div class="owners" style="display:flex; flex-direction:column; gap:1.5rem;">
+      
+      <div class="owner-card" style="background:#fff; padding:1rem; border-radius:8px; box-shadow:0 0 8px rgba(0,0,0,0.1);">
         <h3>Delia Rubi Parra Martínez</h3>
         <p><strong>Formación:</strong> Técnica en electrónica</p>
         <p><strong>Experiencia:</strong> Manejo de negocios familiares y contabilidad</p>
         <p><strong>Contacto:</strong> <a href="mailto:deliarubi25@gmail.com">deliarubi25@gmail.com</a></p>
       </div>
-      <div class="owner-card">
+      
+      <div class="owner-card" style="background:#fff; padding:1rem; border-radius:8px; box-shadow:0 0 8px rgba(0,0,0,0.1);">
         <h3>Wendy Lissette Rangel Martínez</h3>
         <p><strong>Formación:</strong> Técnica en electrónica</p>
         <p><strong>Experiencia:</strong> Atención al cliente</p>
         <p><strong>Contacto:</strong> <a href="mailto:wendyrangel2515@gmail.com">wendyrangel2515@gmail.com</a></p>
       </div>
-      <div class="owner-card">
+      
+      <div class="owner-card" style="background:#fff; padding:1rem; border-radius:8px; box-shadow:0 0 8px rgba(0,0,0,0.1);">
         <h3>Perla Roberta Velázquez Torres</h3>
         <p><strong>Formación:</strong> Información no disponible</p>
         <p><strong>Experiencia:</strong> Información no disponible</p>
       </div>
+    
     </div>
   </div>
 
