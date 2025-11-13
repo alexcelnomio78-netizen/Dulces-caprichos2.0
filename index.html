@@ -2,20 +2,21 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dulces Caprichos</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #fcefee; /* rosa claro */
-      background-image: url('fondo-galletas.jpg'); /* reemplaza con tu imagen */
+      background-color: #fcefee;
+      background-image: url('fondo-galletas.jpg');
       background-size: cover;
       background-repeat: repeat;
       color: #4b2e2e;
     }
 
     header {
-      background-color: #c97b91; /* rosa oscuro */
+      background-color: #c97b91;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -23,6 +24,7 @@
       position: sticky;
       top: 0;
       z-index: 1000;
+      flex-wrap: wrap;
     }
 
     header h1 {
@@ -33,21 +35,28 @@
 
     nav {
       display: flex;
-      gap: 1rem;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     nav a {
-      color: #fff;
+      background-color: #fff;
+      color: #c97b91;
       text-decoration: none;
-      font-size: 0.85rem;
+      font-size: 0.9rem;
       font-weight: bold;
-      padding: 0.3rem 0.6rem;
-      border-radius: 4px;
-      transition: background 0.3s;
+      padding: 0.5rem 1rem;
+      border: 2px solid #c97b91;
+      border-radius: 8px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
     }
 
     nav a:hover {
-      background-color: #a0522d;
+      background-color: #c97b91;
+      color: #fff;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
     }
 
     .content {
@@ -88,12 +97,34 @@
       color: white;
       margin-top: 2rem;
     }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .content {
+        padding: 1rem;
+        margin: 1rem;
+      }
+
+      nav a {
+        width: 100%;
+        text-align: center;
+      }
+    }
   </style>
 </head>
 <body>
 
   <header>
-      <img src="IMG-20251112-WA0030.jpg" alt="Logo Dulces Caprichos" style="display:block; margin:0 auto 1rem; max-width:100px;">
+    <img src="IMG-20251112-WA0030.jpg" alt="Logo Dulces Caprichos" style="max-width:80px;">
     <h1>Dulces Caprichos</h1>
     <nav>
       <a href="index.html">Inicio</a>
